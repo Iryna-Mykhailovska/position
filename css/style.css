@@ -1,0 +1,170 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./vars.css');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    color: var(--color);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+    /* padding: 0 15px; */
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 13px 0;
+    margin-bottom: 70px;
+
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    width: 78%;
+    z-index: 100;
+}
+
+.header_left {
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.lang__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Tourney', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color);
+    line-height: 18px;
+    letter-spacing: 4%;
+
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu__link,
+.menu li {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 3%;
+    color: var(--color);
+}
+main{
+    /* position: sticky;
+    top: 150px; */
+    
+}
+.main_flex_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+aside {
+    width: 33%;
+    margin-right: 30px;
+    position: sticky;
+    top: 100px;
+}
+
+.main_right {
+    width: 67%;
+}
+
+.hidden {
+    display: none;
+}
+
+.article {
+    margin-bottom: 70px;
+}
+.article::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 8px;
+    background-color: var(--color);
+    margin-top: 20px;
+}
+.title {
+    font-family: var(--title-font-family);
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+
+}
+
+.chapter {
+    font-family: 'Farro', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    /* font-style: Light; */
+    font-size: 20px;
+    letter-spacing: 4%;
+    vertical-align: super;
+    position: relative;
+    top: -10px;
+}
+
+.text {
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.text_pad {
+    padding-bottom: 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.mark {
+    background-color: var(--mark-color);
+    padding: 0 5px;
+}
