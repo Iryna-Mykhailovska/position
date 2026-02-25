@@ -80,7 +80,10 @@ ul {
     letter-spacing: 3%;
     color: var(--color);
 }
-
+.document::after{
+    content:'/';
+    margin-left: 10px;
+}
 main {
     position: relative;
     top: 150px;
@@ -202,4 +205,25 @@ main {
 .mark {
     background-color: var(--mark-color);
     padding: 0 5px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.card{
+    width: 270px;
+    height: 180px;
+    background-color: #E6E6E6;
+    padding: 50px 30px;
+    border-radius: 8px;
+}
+.card:hover{
+    background-color: #1A1A1A;
+}
+.icons{
+    fill:#000;
+}
+.card:hover .icons{
+    fill: aqua;
 }
